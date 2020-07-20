@@ -107,10 +107,10 @@ export default class ModalDropdown extends Component {
     };
   }
   static getDerivedStateFromProps(props, state) {
-    console.log('this._nextValue: ', this._nextValue);
+    console.log('this._nextValue: ', this);
     let { buttonText, selectedIndex } = state;
     const { defaultIndex, defaultValue, options } = props;
-    buttonText = buttonText || this._nextValue;
+    buttonText = buttonText || 'Filtrar categorias';
     selectedIndex = selectedIndex;
     if (selectedIndex < 0) {
       selectedIndex = defaultIndex;
